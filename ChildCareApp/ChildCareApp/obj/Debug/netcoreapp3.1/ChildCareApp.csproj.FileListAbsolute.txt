@@ -1,0 +1,11 @@
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\bin\Debug\netcoreapp3.1\ChildCareApp.exe
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\bin\Debug\netcoreapp3.1\ChildCareApp.deps.json
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\bin\Debug\netcoreapp3.1\ChildCareApp.runtimeconfig.json
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\bin\Debug\netcoreapp3.1\ChildCareApp.runtimeconfig.dev.json
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\bin\Debug\netcoreapp3.1\ChildCareApp.dll
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\bin\Debug\netcoreapp3.1\ChildCareApp.pdb
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\obj\Debug\netcoreapp3.1\ChildCareApp.csprojAssemblyReference.cache
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\obj\Debug\netcoreapp3.1\ChildCareApp.AssemblyInfoInputs.cache
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\obj\Debug\netcoreapp3.1\ChildCareApp.AssemblyInfo.cs
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\obj\Debug\netcoreapp3.1\ChildCareApp.dll
+C:\Users\sasyak\source\repos\CLassJan\ChildCareApp\ChildCareApp\obj\Debug\netcoreapp3.1\ChildCareApp.pdb
