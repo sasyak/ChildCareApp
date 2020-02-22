@@ -61,9 +61,21 @@ namespace ChildCareApp
 
         }
 
-        public static List<Person> DispalyAllCheckedInTeachers()
+        public static IEnumerable<Person> DispalyAllChildren()
+        {
+            return peoplelist.FindAll(p => p.PersonType == TypeofPerson.Child);
+
+        }
+
+        public static IEnumerable<Person> DispalyAllCheckedInTeachers()
         {
             return peoplelist.FindAll(p => p.PersonType==TypeofPerson.Teacher && p.Status);
+
+        }
+
+        public static IEnumerable<Person> DispalyAllTeachers()
+        {
+            return peoplelist.FindAll(p => p.PersonType == TypeofPerson.Teacher);
 
         }
     }

@@ -14,10 +14,12 @@ namespace ChildCareApp
             {
                 Console.WriteLine("0. Exit");
                 Console.WriteLine("1. Create a Child/Teacher");
-                Console.WriteLine("2. Child CheckIn");
-                Console.WriteLine("3. Child CheckOut");
+                Console.WriteLine("2. CheckIn");
+                Console.WriteLine("3. CheckOut");
                 Console.WriteLine("4. View all the Children CheckedIn ");
                 Console.WriteLine("5. View all the Teachers CheckedIn ");
+                Console.WriteLine("6. View all Children ");
+                Console.WriteLine("7. View all the Teachers ");
 
                 Console.WriteLine("Select Option");
                 var option = Console.ReadLine();
@@ -83,7 +85,23 @@ namespace ChildCareApp
                             Console.WriteLine($"FN:{d.FirstName} LN:{d.LastName} CN:{d.ClassName} Age:{d.Age} Id:{d.Id} Status:{d.Status}");
                         }
                         break;
+                    case "6":
+                        Console.WriteLine("Display All The  students");
+                        var displayAllChildrenlist = ChildCare.DispalyAllChildren();
+                        foreach (var d in displayAllChildrenlist)
+                        {
+                            Console.WriteLine($"FN:{d.FirstName} LN:{d.LastName} CN:{d.ClassName} Age:{d.Age} Id:{d.Id} Status:{d.Status}");
+                        }
+                        break;
 
+                    case "7":
+                        Console.WriteLine("Display All The Teachers");
+                        var displayAllTeacherlist = ChildCare.DispalyAllTeachers();
+                        foreach (var d in displayAllTeacherlist)
+                        {
+                            Console.WriteLine($"FN:{d.FirstName} LN:{d.LastName} CN:{d.ClassName} Age:{d.Age} Id:{d.Id} Status:{d.Status}");
+                        }
+                        break;
 
 
                 }
