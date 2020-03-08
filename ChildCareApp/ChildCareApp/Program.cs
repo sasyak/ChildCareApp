@@ -20,7 +20,8 @@ namespace ChildCareApp
                 Console.WriteLine("5. View all the Teachers CheckedIn ");
                 Console.WriteLine("6. View all Children ");
                 Console.WriteLine("7. View all the Teachers ");
-
+                Console.WriteLine("8. View all the Child Activity ");
+                Console.WriteLine("9. Add Child Daily Activity ");
                 Console.WriteLine("Select Option");
                 var option = Console.ReadLine();
 
@@ -101,6 +102,24 @@ namespace ChildCareApp
                         {
                             Console.WriteLine($"FN:{d.FirstName} LN:{d.LastName} CN:{d.ClassName} Age:{d.Age} Id:{d.Id} Status:{d.Status}");
                         }
+                        break;
+
+                    case "8":
+                        Console.WriteLine("Enter the child id");
+                        int childId = Convert.ToInt32(Console.ReadLine());
+                        var activity = ChildCare.GetAllActivitiesById(childId);
+                        foreach (var d in activity)
+                        {
+                            Console.WriteLine($"FN:{d.ActivityDate} LN:{d.ActivityType} CN:{d.Description} Age:{d.Id} ");
+                        }
+                        break;
+
+                    case "9":
+                        Console.WriteLine("Enter the child id");
+                        childId = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the Activity");
+                        var activityname= Convert.ToString(Console.ReadLine());
+                        var dayactivity = ChildCare.DailyActivity(childId, activityname);
                         break;
 
 

@@ -18,12 +18,12 @@
         public int Id { get; set; }
         public string ClassName { get; set; }
         public bool Status { get; set; }
+        public string DayWorkdetails { get; set; }
         public TypeofPerson PersonType { get; set; }
         #endregion
         #region Constructor
         public Person()
             {
-             Id = ++lastId;
            }
         #endregion
 
