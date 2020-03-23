@@ -71,13 +71,29 @@ namespace ChildCareApp
             createActivities(person.Id, TypeOfActivity.DayWork, "Kids Day Activities");
             return person;
         }
+        
+        public static void Update(Person updatedPerson)
+        {
+            var oldPerson = GetChildInfo(updatedPerson.Id);
+            oldPerson.FirstName = updatedPerson.FirstName;
+            oldPerson.LastName = updatedPerson.LastName;
+            oldPerson.ClassName = updatedPerson.ClassName;
+            oldPerson.Status = updatedPerson.Status;
+            oldPerson.PersonType = updatedPerson.PersonType;
+
+            db.SaveChanges();
+        }
 
         public static IEnumerable<Person> DispalyAllCheckedInChildren()
         {
             return db.Persons.Where(p => p.PersonType==TypeofPerson.Child && p.Status);
 
         }
+        public static Person GetChildInfo(int Id)
+        {
+            return db.Persons.SingleOrDefault(p=> p.Id== Id);
 
+        }
         public static IEnumerable<Person> DispalyAllChildren()
         {
             return db.Persons.Where(p => p.PersonType == TypeofPerson.Child);
